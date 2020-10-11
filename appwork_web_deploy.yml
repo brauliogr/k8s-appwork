@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appwork-web
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: appwork-web
+  template:
+    metadata:
+      labels:
+        app: appwork-web
+    spec:
+      containers:
+      - name: appwork-web
+        env:
+        - name: MONGO_URL
+          value: mongodb://mongo:27017/
+        image: docker.io/unitynts/appwork_web:1.0
+        ports:
+        - containerPort: 3000
+      restartPolicy: Always
