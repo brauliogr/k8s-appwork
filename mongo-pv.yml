@@ -9,6 +9,9 @@ spec:
   capacity:
     storage: 500Mi
   accessModes:
-    - ReadWriteOnce
-  hostPath:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
     path: "/var/lib/mongo"
+    server: 172.31.74.229
+    readOnly: false
