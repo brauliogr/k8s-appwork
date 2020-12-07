@@ -3,7 +3,7 @@
 # Deployment Appwork at Kubernetes
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Este projeto de criação da aplicação rodando em Kubernetes:
+Este é um projeto para a criação da aplicação appwork rodando em Kubernetes:
 
  Criando Volumes, Deployment e Services do banco de dados Mongodb:
   - kubectl create -f mongo-pv.yml
