@@ -4,7 +4,7 @@ metadata:
   name: nginx-ingress
 spec:
   rules:
-  - host: ec2-3-215-16-127.compute-1.amazonaws.com 
+  - host: appwork-web-879407662.us-east-1.elb.amazonaws.com 
     http:
       paths:
       - backend:

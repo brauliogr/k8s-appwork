@@ -6,7 +6,7 @@ metadata:
   name: appwork-web
 spec:
   rules:
-  - host: ec2-3-215-16-127.compute-1.amazonaws.com 
+  - host: appwork-512867950.us-east-1.elb.amazonaws.com 
     http:
       paths:
       - backend:
